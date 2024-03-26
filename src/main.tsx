@@ -1,10 +1,19 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./index.css";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+// Custom Pages to be imported
+import Homepage from "./pages/Homepage";
+import ReceiptPage from "./pages/ReceiptPage";
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/receipt" element={<ReceiptPage />} />
+      </Routes>
+    </Router>
+  </React.StrictMode>
+);
