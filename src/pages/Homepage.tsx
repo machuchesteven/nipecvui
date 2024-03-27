@@ -10,9 +10,12 @@ const Homepage: React.FC = () => {
     <div>
       <Navbar />
       <div className="container mx-auto">
-        <button className="btn">Demo</button>
-        <Link to="/receipt" className="btn">
+        <button className="alt-btn">Demo</button>
+        <Link to="/receipt" className="alt-btn">
           Go To Receipts
+        </Link>
+        <Link to="/cv" className="alt-btn">
+          Go To CVs
         </Link>
       </div>
       <Footer />

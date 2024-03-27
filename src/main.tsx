@@ -6,6 +6,7 @@ import "./index.css";
 // Custom Pages to be imported
 import Homepage from "./pages/Homepage";
 import ReceiptPage from "./pages/ReceiptPage";
+import CVPage from "./pages/CVPage";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/receipt" element={<ReceiptPage />} />
+        <Route path="/cv" element={<CVPage />} />
       </Routes>
     </Router>
   </React.StrictMode>
