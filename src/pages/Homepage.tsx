@@ -17,6 +17,12 @@ const Homepage: React.FC = () => {
         <Link to="/cv" className="alt-btn">
           Go To CVs
         </Link>
+        <Link to="/feature" className="alt-btn">
+          Go To Features
+        </Link>
+        <Link to="/error" className="alt-btn">
+          Go To Error
+        </Link>
       </div>
       <Footer />
     </div>

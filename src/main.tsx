@@ -7,6 +7,8 @@ import "./index.css";
 import Homepage from "./pages/Homepage";
 import ReceiptPage from "./pages/ReceiptPage";
 import CVPage from "./pages/CVPage";
+import FeaturesPage from "./pages/FeaturesPage";
+import ErrorPage from "./pages/ErrorPage";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -15,6 +17,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<Homepage />} />
         <Route path="/receipt" element={<ReceiptPage />} />
         <Route path="/cv" element={<CVPage />} />
+        <Route path="/feature" element={<FeaturesPage />} />
+        <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </Router>
   </React.StrictMode>
